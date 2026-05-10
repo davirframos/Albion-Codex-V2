@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-08T15:08:33.5042106-03:00",
+  "title": "Design System: Albion Codex V2",
+  "extensions": {
+    "colorMeta": {
+      "abyss-bg": {
+        "role": "neutral",
+        "displayName": "Abyss Background",
+        "canonical": "#080b12",
+        "tonalRamp": [
+          "oklch(15% 0.02 255)",
+          "oklch(25% 0.02 255)",
+          "oklch(35% 0.018 255)",
+          "oklch(45% 0.016 255)",
+          "oklch(55% 0.014 255)",
+          "oklch(70% 0.012 255)",
+          "oklch(84% 0.01 255)",
+          "oklch(95% 0.008 255)"
+        ]
+      },
+      "royal-gold": {
+        "role": "primary",
+        "displayName": "Royal Gold",
+        "canonical": "#d8aa55",
+        "tonalRamp": [
+          "oklch(18% 0.06 78)",
+          "oklch(28% 0.07 78)",
+          "oklch(40% 0.08 78)",
+          "oklch(52% 0.09 78)",
+          "oklch(64% 0.1 78)",
+          "oklch(74% 0.08 78)",
+          "oklch(86% 0.05 78)",
+          "oklch(95% 0.025 78)"
+        ]
+      },
+      "action-blue": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "canonical": "#75b8ff",
+        "tonalRamp": [
+          "oklch(18% 0.07 250)",
+          "oklch(30% 0.09 250)",
+          "oklch(42% 0.11 250)",
+          "oklch(54% 0.13 250)",
+          "oklch(66% 0.12 250)",
+          "oklch(76% 0.09 250)",
+          "oklch(87% 0.055 250)",
+          "oklch(95% 0.025 250)"
+        ]
+      },
+      "profit-green": {
+        "role": "secondary",
+        "displayName": "Profit Green",
+        "canonical": "#00f28a",
+        "tonalRamp": [
+          "oklch(18% 0.08 155)",
+          "oklch(30% 0.11 155)",
+          "oklch(42% 0.14 155)",
+          "oklch(54% 0.16 155)",
+          "oklch(66% 0.16 155)",
+          "oklch(76% 0.12 155)",
+          "oklch(87% 0.07 155)",
+          "oklch(95% 0.03 155)"
+        ]
+      },
+      "risk-red": {
+        "role": "tertiary",
+        "displayName": "Risk Red",
+        "canonical": "#f06262",
+        "tonalRamp": [
+          "oklch(18% 0.08 25)",
+          "oklch(30% 0.1 25)",
+          "oklch(42% 0.13 25)",
+          "oklch(54% 0.15 25)",
+          "oklch(66% 0.13 25)",
+          "oklch(76% 0.1 25)",
+          "oklch(87% 0.06 25)",
+          "oklch(95% 0.025 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titulo principal da aplicacao, identidade sem hero de marketing."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto operacional em tabela, filtros e diagnostico."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Cabecalhos, chips, metadados e status compactos."
+      }
+    },
+    "shadows": [
+      {
+        "name": "status-lift",
+        "value": "0 18px 42px rgba(0, 0, 0, 0.28)",
+        "purpose": "Status compacto ou superficie que precisa ser vista rapidamente."
+      },
+      {
+        "name": "summary-lift",
+        "value": "0 20px 60px rgba(0, 0, 0, 0.24)",
+        "purpose": "Cards de resumo."
+      },
+      {
+        "name": "panel-lift",
+        "value": "0 18px 52px rgba(0, 0, 0, 0.22)",
+        "purpose": "Filtros e paineis principais."
+      },
+      {
+        "name": "table-lift",
+        "value": "0 24px 70px rgba(0, 0, 0, 0.32)",
+        "purpose": "Container de oportunidades."
+      },
+      {
+        "name": "popover-lift",
+        "value": "0 24px 60px rgba(0, 0, 0, 0.44)",
+        "purpose": "Dropdowns e sugestoes."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-fast",
+        "value": "160ms ease",
+        "purpose": "Transicoes de hover, cor, borda e transform em controles."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acao principal compacta para aplicar ou confirmar.",
+      "html": "<button class=\"ds-btn-primary\">Aplicar</button>",
+      "css": ".ds-btn-primary { background: #75b8ff; border: 1px solid #75b8ff; border-radius: 6px; color: #10151f; cursor: pointer; font: 900 11px/1 Inter, ui-sans-serif, system-ui, sans-serif; min-height: 34px; min-width: 148px; padding: 0 12px; transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease; } .ds-btn-primary:hover { transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(216, 170, 85, 0.18); }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Comando secundario dourado para recarregar, limpar ou mostrar mais.",
+      "html": "<button class=\"ds-btn-quiet\">Recarregar API</button>",
+      "css": ".ds-btn-quiet { background: transparent; border: 1px solid rgba(216, 170, 85, 0.44); border-radius: 6px; color: #f0cd85; cursor: pointer; font: 800 13px/1 Inter, ui-sans-serif, system-ui, sans-serif; min-height: 34px; padding: 0 12px; transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease; } .ds-btn-quiet:hover { background: rgba(216, 170, 85, 0.12); border-color: rgba(216, 170, 85, 0.8); transform: translateY(-1px); } .ds-btn-quiet:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(216, 170, 85, 0.18); }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo escuro para busca e filtros numericos.",
+      "html": "<label class=\"ds-field\"><span>Nome do item</span><input placeholder=\"Item\" /></label>",
+      "css": ".ds-field { display: grid; gap: 9px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-field span { color: #aab4c1; font-size: 11px; font-weight: 900; line-height: 1; text-transform: uppercase; } .ds-field input { background: #0a0f19; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; color: #e8edf2; font: 400 14px/1.4 Inter, ui-sans-serif, system-ui, sans-serif; min-height: 42px; outline: none; padding: 0 12px; width: 100%; } .ds-field input:focus { border-color: #d8aa55; box-shadow: 0 0 0 3px rgba(216, 170, 85, 0.14); }"
+    },
+    {
+      "name": "Summary Card",
+      "kind": "card",
+      "refersTo": "summary-card",
+      "description": "Card de metrica compacto com numero dominante.",
+      "html": "<article class=\"ds-summary\"><span>Melhor lucro</span><strong>128k</strong></article>",
+      "css": ".ds-summary { background: linear-gradient(180deg, rgba(19, 26, 42, 0.92), rgba(12, 17, 28, 0.92)); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24); min-height: 106px; padding: 18px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-summary span { color: #95a0ad; font-size: 13px; font-weight: 700; } .ds-summary strong { color: #f7f9fb; display: block; font-size: 40px; line-height: 1; margin-top: 18px; }"
+    },
+    {
+      "name": "Item Chip",
+      "kind": "chip",
+      "refersTo": "item-chip",
+      "description": "Chip de tier, encantamento e qualidade.",
+      "html": "<span class=\"ds-item-chip\">T8.4 <b>|</b> Excelente</span>",
+      "css": ".ds-item-chip { align-items: center; background: rgba(216, 170, 85, 0.12); border: 1px solid rgba(216, 170, 85, 0.52); border-radius: 4px; color: #ffd35f; display: inline-flex; font: 900 11px/1 Inter, ui-sans-serif, system-ui, sans-serif; gap: 6px; min-height: 24px; padding: 0 8px; text-transform: uppercase; width: fit-content; } .ds-item-chip b { color: #8d783f; }"
+    },
+    {
+      "name": "Profit Cell",
+      "kind": "custom",
+      "refersTo": "profit-cell",
+      "description": "Bloco de decisao financeira com lucro dominante e acoes discretas.",
+      "html": "<div class=\"ds-profit\"><strong>+92.4k</strong><span>18.42% lucro</span><div><button>Salvar</button><button>Esgotado</button><button>Executar</button></div></div>",
+      "css": ".ds-profit { min-width: 180px; text-align: right; font-family: Inter, ui-sans-serif, system-ui, sans-serif; } .ds-profit strong { color: #00f28a; display: block; font-size: 22px; line-height: 1; text-shadow: 0 0 18px rgba(0, 242, 138, 0.22); } .ds-profit span { color: #5f6c7c; display: block; font-size: 12px; margin-top: 5px; } .ds-profit div { display: flex; gap: 6px; justify-content: flex-end; margin-top: 10px; } .ds-profit button { background: transparent; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; color: #9eabbc; cursor: pointer; min-height: 28px; padding: 0 8px; } .ds-profit button:hover { background: rgba(255, 255, 255, 0.06); color: #f7f9fb; } .ds-profit button:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(216, 170, 85, 0.18); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Mesa de Arbitragem Real",
+    "overview": "Albion Codex V2 deve parecer uma mesa privada de decisao: tecnica, rapida e premium, feita para quem ja entende a mecanica e precisa agir antes do dado envelhecer. A interface aceita densidade, mas a densidade precisa parecer intencional, com hierarquia nitida para lucro, margem, quantidade, origem dos dados, idade da ordem e risco.\n\nO sistema visual e escuro por contexto de uso: o jogador esta com Albion Online, API local, cliente de coleta e painel web abertos ao mesmo tempo, provavelmente em uma sessao longa de jogo. O fundo profundo reduz fadiga, enquanto ouro, azul e verde aparecem como sinais raros para direcao, acao e lucro.\n\nO design rejeita painel generico de SaaS, terminal de negociacao de cripto, planilha feia e fantasia medieval exagerada. Albion aparece por itens, cidades e linguagem de mercado, nao por ornamento.",
+    "keyCharacteristics": [
+      "Escuro, tecnico e compacto, com brilho usado como sinal e nao como decoracao.",
+      "Densidade alta com separacao clara entre decisao, diagnostico e filtros.",
+      "Hierarquia monetaria forte: lucro e preco precisam vencer o ruido.",
+      "Estados de risco visiveis, incluindo dado velho, quantidade estimada, fonte publica/privada e falha de coleta.",
+      "Premium contido: poucas cores, cantos pequenos, superficies em camadas discretas."
+    ],
+    "rules": [
+      {
+        "name": "The Rare Signal Rule",
+        "body": "Ouro, azul e verde existem para decisao. Se tudo esta acentuado, nada esta acentuado.",
+        "section": "colors"
+      },
+      {
+        "name": "The Profit Is Sacred Rule",
+        "body": "profit-green pertence a lucro e confirmacao financeira. Nao use essa cor para botoes comuns, decoracao ou estados neutros.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark Is Working Light Rule",
+        "body": "A base escura e operacional, nao dramatica. Evite preto puro e evite gradientes roxos ou neon.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Marketing Type Rule",
+        "body": "Nao use tipografia de landing page em superficies de trabalho. O usuario precisa comparar e agir, nao ser convencido.",
+        "section": "typography"
+      },
+      {
+        "name": "The Number Wins Rule",
+        "body": "Valores de prata, lucro, margem, quantidade e idade da ordem devem ter prioridade visual sobre textos explicativos.",
+        "section": "typography"
+      },
+      {
+        "name": "The Discreet Layers Rule",
+        "body": "Use sombra para separar decisao, filtro e diagnostico. Nao use sombra para decorar.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No Floating Dashboard Rule",
+        "body": "Cards soltos demais fazem o produto parecer SaaS generico. Prefira faixas e superficies conectadas quando o conteudo pertence ao mesmo fluxo.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do manter a tela tecnica, rapida e premium: pouca ornamentacao, alta legibilidade, decisao acima de explicacao.",
+      "Do usar profit-green somente para lucro e confirmacao financeira.",
+      "Do mostrar fonte, quantidade e idade da ordem perto dos valores de compra/venda.",
+      "Do preservar densidade de tabela, mas com alinhamento, pesos e espacos suficientes para escanear.",
+      "Do usar ouro como sinal raro de Albion/contexto/foco, nao como banho decorativo.",
+      "Do manter cantos pequenos (4px-8px) e superficies em camadas discretas.",
+      "Do garantir que status nao dependa apenas de cor: labels como privado, publico, offline e erro devem continuar legiveis."
+    ],
+    "donts": [
+      "Don't criar painel generico de SaaS com cards intercambiaveis, metricas decorativas e texto de produtividade.",
+      "Don't transformar a interface em terminal de negociacao de cripto: sem neon caotico, sem chart-wall, sem roxo futurista como reflexo.",
+      "Don't deixar a tela virar planilha feia, raw table dump, admin template ou grade sem hierarquia.",
+      "Don't usar fantasia medieval exagerada. Albion deve aparecer por itens, cidades e contexto de mercado, nao por ornamento cosplay.",
+      "Don't usar gradiente em texto, glassmorphism decorativo, bokeh/orbs ou bordas laterais coloridas grossas.",
+      "Don't usar sombras pesadas para tudo. Se todos os blocos flutuam, a decisao perde gravidade.",
+      "Don't usar verde de lucro em estados neutros, filtros ou botoes secundarios."
+    ]
+  }
+}

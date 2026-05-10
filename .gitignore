@@ -1,0 +1,11 @@
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+db/*.sqlite
+db/*.sqlite-shm
+db/*.sqlite-wal
+*.log
+.env
+.env.*
+!.env.example
+npm-debug.log*

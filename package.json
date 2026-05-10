@@ -1,0 +1,23 @@
+{
+  "name": "albion-codex-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated Caerleon to Black Market flipper for Albion Online.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "doctor": "node scripts/check-share-ready.js",
+    "setup": "npm install && npm --prefix apps/web install",
+    "dev:api": "node apps/api/src/server.js",
+    "dev:web": "npm --prefix apps/web run dev",
+    "test": "node --test apps/api/src/*.test.js apps/web/src/*.test.js",
+    "build:web": "npm --prefix apps/web run build"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "nats": "^2.29.3",
+    "ws": "^8.18.0"
+  }
+}
