@@ -4,21 +4,6 @@ Ferramenta local para Albion Online focada em uma mecanica: comprar no mercado n
 
 O projeto roda somente na maquina local por padrao. A API escuta em `127.0.0.1`, a web tambem abre em `127.0.0.1`, e os dados coletados ficam em um SQLite local dentro da pasta `db/`.
 
-## Antes de compartilhar
-
-Se voce vai mandar este projeto para amigos por GitHub ou `.zip`, envie o codigo e deixe de fora arquivos gerados localmente:
-
-- `node_modules/`
-- `apps/web/node_modules/`
-- `apps/web/dist/`
-- `db/*.sqlite`
-- `db/*.sqlite-shm`
-- `db/*.sqlite-wal`
-- `*.log`
-- `.env` ou `.env.*`
-
-Esses arquivos ja estao no `.gitignore`. Se for compactar manualmente, confira a lista acima antes de enviar.
-
 ## Requisitos
 
 - Windows 10/11
