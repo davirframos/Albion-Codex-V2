@@ -2,6 +2,14 @@
 
 Ferramenta local para Albion Online focada em uma mecanica: comprar no mercado normal de Caerleon e vender imediatamente para a melhor buy order do Black Market.
 
+## Sobre o projeto
+
+Ferramenta de arbitragem de mercado em tempo real para o jogo Albion Online. Monitora continuamente as ordens de compra/venda entre duas pracas do mercado do jogo e calcula automaticamente oportunidades de lucro, aplicando taxas reais de venda.
+
+**Stack:** Node.js, WebSocket (dados em tempo real), SQLite (persistencia local), integracao com API REST publica e NATS (streaming de eventos de mercado), arquitetura local-first (API + web + banco, tudo rodando na maquina do usuario sem depender de servidor externo).
+
+**Destaques tecnicos:** ingestao de dados via dois canais (snapshot REST + stream NATS), calculo de margem liquida considerando taxas de mercado, diagnostico automatizado de ambiente (`npm run doctor`), e suporte a multiplos servidores do jogo via variavel de ambiente.
+
 O projeto roda somente na maquina local por padrao. A API escuta em `127.0.0.1`, a web tambem abre em `127.0.0.1`, e os dados coletados ficam em um SQLite local dentro da pasta `db/`.
 
 ## Requisitos
